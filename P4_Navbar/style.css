@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-center{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 2px 16px rgb(173, 173, 173);
+}
+.nav-toggle{
+    display: none;
+}
+.logo,
+.links,
+.social-media{
+    line-height: 70px;
+    cursor: pointer;
+}
+.links,
+.social-media{
+    display: flex;
+    list-style: none;
+}
+.logo{
+    font-size: 40px;
+    padding-left: 10px;
+    color: #5BAAD9;
+}
+.links{
+    list-style: none;
+    margin: auto;
+}
+.links a{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    margin: 0 1.2rem;
+}
+.social-media a{
+    margin: 0 .5rem;
+    font-size: 1rem;
+    color: #5BAAD9;
+}
+
+@media only screen and (max-width: 800px){
+    .social-media{
+        display: none;
+    }
+    .nav-center{
+        position: relative;
+    }
+    .nav-toggle{
+        display: inline-block;
+        border: none;
+        background-color: white;
+        color: #5BAAD9;
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        bottom: 0;
+    }
+    .links{
+        display: none;
+    }
+    .nav-toggle:hover{
+        transform: rotate(90deg);
+        transition: 0.2s;
+    }
+    .links{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 10rem;
+        background-color: white;
+        line-height: 2.4rem;
+        top: 70px;
+        box-shadow: 0 6px 6px rgb(173, 173, 173);
+    }
+    .links a{
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .links a:hover{
+        background-color: #5BAAD9;
+        padding-left: 30px;
+        transition: .15s;
+        color: aliceblue;
+    }
+    .links-hidden{
+        display: none;
+    }
+}

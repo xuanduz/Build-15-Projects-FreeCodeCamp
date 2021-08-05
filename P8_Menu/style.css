@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F8FF;
+}
+
+.menu {
+    width: 80%;
+    margin: auto;
+    font-family: Calibri, sans-serif;
+}
+
+.title {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+.underline {
+    width: 6rem;
+    height: 5px;
+    background-color: rgb(202, 67, 5);
+    margin: 1.5rem auto;
+    border-radius: 5px;
+}
+
+.menu-item {
+    display: flex;
+    margin: 1.5rem auto;
+    width: 28rem;
+}
+
+.photo {
+    border-radius: 5px;
+    border: 4px solid rgb(202, 67, 5);
+    margin-right: .5rem;
+    width: 200px;
+}
+
+.item-info header {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid rgb(195, 195, 195);
+}
+
+.item-info .price {
+    color: rgb(202, 67, 5);
+}
+
+.text-item {
+    margin-top: .8rem;
+    font-size: 1.05rem;
+    color: rgb(14, 62, 151);
+}
+
+/*-------- Filter Button ---------*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.filter-btn{
+    padding: 5px 10px;
+    margin: 0 1rem;
+    border-radius: 8px;
+    border: 2px solid rgb(202, 67, 5);
+    text-transform: capitalize;
+    color: rgb(202, 67, 5);
+    background-color: #F3F8FF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.filter-btn:hover{
+    transition: .3s;
+    color: white;
+    background-color: rgb(194, 43, 16);
+}
+
+@media screen and (min-width: 1200px){
+    .section-center {
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+        grid-column-gap: 1rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .section-center {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .section-center {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .menu-item{
+        display: block;
+    }
+    .photo{
+        width: 100%;
+    }
+}
